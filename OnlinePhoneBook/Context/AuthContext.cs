@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
+using OnlinePhoneBook.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -13,5 +15,7 @@ namespace OnlinePhoneBook.Context
         {
 
         }
+
+        public DbSet<Contact> ContactList { get; set; }
     }
 }

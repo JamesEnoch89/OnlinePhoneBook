@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+/*
 namespace OnlinePhoneBook.Controllers
 {
     [RoutePrefix("api/Contact")]
@@ -14,14 +14,9 @@ namespace OnlinePhoneBook.Controllers
         [Route("")]
         public IHttpActionResult Get()
         {
-            return Ok(Contact.CreateContact());
+           // var db = new 
         }
 
     }
-
-    #region Helpers
-
-   
-
-    #endregion
 }
+*/

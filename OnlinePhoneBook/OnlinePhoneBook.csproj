@@ -225,6 +225,15 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Migrations\201805021826406_InitialCreate.cs" />
+    <Compile Include="Migrations\201805021826406_InitialCreate.Designer.cs">
+      <DependentUpon>201805021826406_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805021853088_FirstRun.cs" />
+    <Compile Include="Migrations\201805021853088_FirstRun.Designer.cs">
+      <DependentUpon>201805021853088_FirstRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -297,6 +306,14 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805021826406_InitialCreate.resx">
+      <DependentUpon>201805021826406_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805021853088_FirstRun.resx">
+      <DependentUpon>201805021853088_FirstRun.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

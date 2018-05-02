@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using OnlinePhoneBook.Providers;
 
 [assembly: OwinStartup(typeof(OnlinePhoneBook.Startup))]
 namespace OnlinePhoneBook
@@ -17,6 +18,8 @@ namespace OnlinePhoneBook
         public void Configuration(IAppBuilder app)
         {
             HttpConfiguration config = new HttpConfiguration();
+            ConfigureOAuth(app);
+
             WebApiConfig.Register(config);
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             app.UseWebApi(config);
